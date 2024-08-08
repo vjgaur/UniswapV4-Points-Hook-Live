@@ -13,7 +13,9 @@ import {Hooks} from "v4-core/libraries/Hooks.sol";
 contract PointsHook is BaseHook ERC20{
 
     constructor{
-
-    }
+        IPoolManager _manager,
+        string memory _name,
+        string memory _symbol
+    }BaseHook(_manager) ERC20(_name,symbol)
 
 }
